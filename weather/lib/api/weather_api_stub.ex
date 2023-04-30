@@ -8,45 +8,47 @@ defmodule Weather.API.Stub do
   def get_city_weather("Sofia") do
     json = """
     {
-      "location": {
-        "name": "Sofia",
-        "region": "Grad Sofiya",
-        "country": "Bulgaria",
-        "lat": 42.68,
-        "lon": 23.32,
-        "tz_id": "Europe/Sofia",
-        "localtime_epoch": 1679673805,
-        "localtime": "2023-03-24 18:03"
+      "coord": {
+        "lon": 23.3242,
+        "lat": 42.6975
       },
-      "current": {
-        "last_updated_epoch": 1679673600,
-        "last_updated": "2023-03-24 18:00",
-        "temp_c": 18,
-        "temp_f": 64.4,
-        "is_day": 1,
-        "condition": {
-          "text": "Sunny",
-          "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
-          "code": 1000
-        },
-        "wind_mph": 6.9,
-        "wind_kph": 11.2,
-        "wind_degree": 90,
-        "wind_dir": "E",
-        "pressure_mb": 1013,
-        "pressure_in": 29.91,
-        "precip_mm": 0,
-        "precip_in": 0,
-        "humidity": 39,
-        "cloud": 0,
-        "feelslike_c": 18,
-        "feelslike_f": 64.4,
-        "vis_km": 10,
-        "vis_miles": 6,
-        "uv": 5,
-        "gust_mph": 1.1,
-        "gust_kph": 1.8
-      }
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 286.98,
+        "feels_like": 286.04,
+        "temp_min": 286.98,
+        "temp_max": 290.95,
+        "pressure": 1015,
+        "humidity": 62
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 2.57,
+        "deg": 270
+      },
+      "clouds": {
+        "all": 75
+      },
+      "dt": 1682845659,
+      "sys": {
+        "type": 1,
+        "id": 6366,
+        "country": "BG",
+        "sunrise": 1682824991,
+        "sunset": 1682875474
+      },
+      "timezone": 10800,
+      "id": 727011,
+      "name": "Sofia",
+      "cod": 200
     }
     """
 
@@ -56,45 +58,47 @@ defmodule Weather.API.Stub do
   def get_city_weather("Berlin") do
     json = """
     {
-      "location": {
-        "name": "Berlin",
-        "region": "Berlin",
-        "country": "Germany",
-        "lat": 52.52,
-        "lon": 13.4,
-        "tz_id": "Europe/Berlin",
-        "localtime_epoch": 1679674007,
-        "localtime": "2023-03-24 17:06"
+      "coord": {
+        "lon": 13.4105,
+        "lat": 52.5244
       },
-      "current": {
-        "last_updated_epoch": 1679673600,
-        "last_updated": "2023-03-24 17:00",
-        "temp_c": 14,
-        "temp_f": 57.2,
-        "is_day": 1,
-        "condition": {
-          "text": "Partly cloudy",
-          "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
-          "code": 1003
-        },
-        "wind_mph": 15,
-        "wind_kph": 24.1,
-        "wind_degree": 270,
-        "wind_dir": "W",
-        "pressure_mb": 1001,
-        "pressure_in": 29.56,
-        "precip_mm": 0,
-        "precip_in": 0,
-        "humidity": 51,
-        "cloud": 25,
-        "feelslike_c": 12.5,
-        "feelslike_f": 54.4,
-        "vis_km": 10,
-        "vis_miles": 6,
-        "uv": 4,
-        "gust_mph": 15,
-        "gust_kph": 24.1
-      }
+      "weather": [
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 283.34,
+        "feels_like": 281.8,
+        "temp_min": 281.68,
+        "temp_max": 285.27,
+        "pressure": 1022,
+        "humidity": 53
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 4.63,
+        "deg": 290
+      },
+      "clouds": {
+        "all": 0
+      },
+      "dt": 1682845831,
+      "sys": {
+        "type": 2,
+        "id": 2011538,
+        "country": "DE",
+        "sunrise": 1682825858,
+        "sunset": 1682879364
+      },
+      "timezone": 7200,
+      "id": 2950159,
+      "name": "Berlin",
+      "cod": 200
     }
     """
 
@@ -104,45 +108,47 @@ defmodule Weather.API.Stub do
   def get_city_weather("London") do
     json = """
     {
-      "location": {
-        "name": "London",
-        "region": "City of London, Greater London",
-        "country": "United Kingdom",
-        "lat": 51.52,
-        "lon": -0.11,
-        "tz_id": "Europe/London",
-        "localtime_epoch": 1679674044,
-        "localtime": "2023-03-24 16:07"
+      "coord": {
+        "lon": -0.1257,
+        "lat": 51.5085
       },
-      "current": {
-        "last_updated_epoch": 1679673600,
-        "last_updated": "2023-03-24 16:00",
-        "temp_c": 9,
-        "temp_f": 48.2,
-        "is_day": 1,
-        "condition": {
-          "text": "Light rain",
-          "icon": "//cdn.weatherapi.com/weather/64x64/day/296.png",
-          "code": 1183
-        },
-        "wind_mph": 19.2,
-        "wind_kph": 31,
-        "wind_degree": 260,
-        "wind_dir": "W",
-        "pressure_mb": 998,
-        "pressure_in": 29.47,
-        "precip_mm": 0.3,
-        "precip_in": 0.01,
-        "humidity": 81,
-        "cloud": 75,
-        "feelslike_c": 5.3,
-        "feelslike_f": 41.5,
-        "vis_km": 10,
-        "vis_miles": 6,
-        "uv": 3,
-        "gust_mph": 24.8,
-        "gust_kph": 40
-      }
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 287.85,
+        "feels_like": 287.2,
+        "temp_min": 286.14,
+        "temp_max": 288.86,
+        "pressure": 1022,
+        "humidity": 70
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 3.6,
+        "deg": 140
+      },
+      "clouds": {
+        "all": 100
+      },
+      "dt": 1682845846,
+      "sys": {
+        "type": 2,
+        "id": 2019646,
+        "country": "GB",
+        "sunrise": 1682829292,
+        "sunset": 1682882428
+      },
+      "timezone": 3600,
+      "id": 2643743,
+      "name": "London",
+      "cod": 200
     }
     """
 
@@ -152,45 +158,50 @@ defmodule Weather.API.Stub do
   def get_city_weather("Osaka") do
     json = """
     {
-      "location": {
-        "name": "Osaka-Shi",
-        "region": "Osaka",
-        "country": "Japan",
-        "lat": 34.69,
-        "lon": 135.5,
-        "tz_id": "Asia/Tokyo",
-        "localtime_epoch": 1679674072,
-        "localtime": "2023-03-25 1:07"
+      "coord": {
+        "lon": 135.5022,
+        "lat": 34.6937
       },
-      "current": {
-        "last_updated_epoch": 1679673600,
-        "last_updated": "2023-03-25 01:00",
-        "temp_c": 13,
-        "temp_f": 55.4,
-        "is_day": 0,
-        "condition": {
-          "text": "Clear",
-          "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
-          "code": 1000
-        },
-        "wind_mph": 11.9,
-        "wind_kph": 19.1,
-        "wind_degree": 340,
-        "wind_dir": "NNW",
-        "pressure_mb": 1014,
-        "pressure_in": 29.94,
-        "precip_mm": 0,
-        "precip_in": 0,
-        "humidity": 77,
-        "cloud": 0,
-        "feelslike_c": 12,
-        "feelslike_f": 53.6,
-        "vis_km": 10,
-        "vis_miles": 6,
-        "uv": 1,
-        "gust_mph": 9.2,
-        "gust_kph": 14.8
-      }
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 291.55,
+        "feels_like": 291.14,
+        "temp_min": 290.11,
+        "temp_max": 292.33,
+        "pressure": 1011,
+        "humidity": 65,
+        "sea_level": 1011,
+        "grnd_level": 1009
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 2.69,
+        "deg": 39,
+        "gust": 6.06
+      },
+      "clouds": {
+        "all": 100
+      },
+      "dt": 1682845992,
+      "sys": {
+        "type": 2,
+        "id": 2034450,
+        "country": "JP",
+        "sunrise": 1682798970,
+        "sunset": 1682847653
+      },
+      "timezone": 32400,
+      "id": 1853909,
+      "name": "Osaka",
+      "cod": 200
     }
     """
 
